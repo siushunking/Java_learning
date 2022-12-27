@@ -1,4 +1,8 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class App {
+    private static final DecimalFormat DF = new DecimalFormat("0.00");
     public static void main(String[] args) throws Exception {
         char lastName = 'R';
         System.out.println(lastName);
@@ -13,5 +17,18 @@ public class App {
 
 
         System.out.println("Hello, World!");
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How much is your weight: ");
+        double weight = scanner.nextDouble();
+        System.out.println(weight);
+
+        System.out.print("How much is your height: ");
+        double height = scanner.nextDouble() / 100;
+
+        double bmi = Double.parseDouble(DF.format(weight/ (height * height)));
+        System.out.println(bmi);
+
     }
 }
