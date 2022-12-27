@@ -10,8 +10,8 @@ public class App extends JPanel {
     // }
     public static void main(String[] args) throws Exception {
         // App m = new App();
-        Student student = new Student("name", 88, "address", "subject");
-        student.walk();
+        // Student student = new Student("name", 88, "address", "subject");
+        Student student = new Student( "subject");
         System.out.println(student.address);
 
 

@@ -3,6 +3,13 @@ public class People {
     protected int age;
     protected String address;
 
+    //default constructor
+    public People(){
+        name = "ivan";
+        age = 12;
+        address = "HK";
+    }
+
     public People(String name, int age, String address){
         this.age = age;
         this.name = name;
