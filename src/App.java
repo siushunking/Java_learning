@@ -12,12 +12,15 @@ public class App extends JPanel {
         App m = new App();
 
         // like injectable
-        Robot rebot = new Robot();
+        Robot robot = new Robot();
         //Encapusulation 
         Scanner z = new Scanner(System.in);
         String y = z.next();
-        rebot.setName(y);
-        System.out.println(rebot.getName());
+        robot.setName(y);
+        System.out.println(robot.getName());
+
+        robot.setYearMade(23);
+        System.out.println(robot.getYear());
 
         System.out.println(m.add(5, 5));
         
