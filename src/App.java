@@ -5,7 +5,14 @@ import java.util.Scanner;
 
 public class App extends JPanel {
     //private static final DecimalFormat DF = new DecimalFormat("0.00");
+    public static int add(int x, int y){
+        return x + y;
+    }
     public static void main(String[] args) throws Exception {
+        App m = new App();
+
+        System.out.println(m.add(5, 5));
+        
         Circle circle1 = new Circle(10);
         System.out.println(circle1.radius);
 
