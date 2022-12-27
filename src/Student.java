@@ -11,4 +11,9 @@ public class Student extends People{
         this.Subject = subject;
     } 
 
+    // @Override
+    // public void walk(){
+    //     System.out.println("123");
+    // }
+
 }
