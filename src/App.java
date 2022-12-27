@@ -11,6 +11,14 @@ public class App extends JPanel {
     public static void main(String[] args) throws Exception {
         App m = new App();
 
+        // like injectable
+        Robot rebot = new Robot();
+        //Encapusulation 
+        Scanner z = new Scanner(System.in);
+        String y = z.next();
+        rebot.setName(y);
+        System.out.println(rebot.getName());
+
         System.out.println(m.add(5, 5));
         
         Circle circle1 = new Circle(10);
