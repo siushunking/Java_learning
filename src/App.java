@@ -28,7 +28,17 @@ public class App {
         double height = scanner.nextDouble() / 100;
 
         double bmi = Double.parseDouble(DF.format(weight/ (height * height)));
-        System.out.println(bmi);
+        System.out.println("Your bmi is:" + bmi);
+
+        if(bmi< 18.5){
+            System.out.println("you need to eat more");
+        }else if(bmi < 24){
+            System.out.println("your weight is good");
+        }else if(bmi < 30){
+            System.out.println("overwight");
+        }else {
+            System.out.println("too fat");
+        }
 
     }
 }
